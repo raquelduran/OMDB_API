@@ -136,7 +136,13 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 	.grid.team div{margin: 0;padding: 0;}
 	figure.effect-chico figcaption {padding: 1.5em;}
-	.footer{margin-top: 2em;padding-bottom: 2em;}
+	.footer{margin-top: 0px;padding-bottom: 2em; height: 180px;}
+	input.busqueda{margin-top:-30px; margin-left: 20%; width: 250px;}
+	.not_results{width: 500px; text-align: 	center;}
+	 input.busqueda[type="search"]{padding: 0% 0% 0% 10%;}
+	}
+	}
+	}
 }
 
 
