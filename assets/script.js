@@ -40,6 +40,7 @@ $('.carousel').swipe( {
 
 $(document).ready(function(){
     var page = 0;
+    var lastPage = 0;
     $("#works").append("<div class='not_results'><br><br><br><br><br><br><br><br><br><p></p></div>")
      $(".spinner").hide();
 
@@ -55,8 +56,7 @@ $(document).ready(function(){
 
     function llamada(){
         var titulobuscado = $("input").val();
-            $.getJSON("http://www.omdbapi.com/?s="+titulobuscado+"&page="+page, function(data){
-                console.log(data);
+            $.getJSON("https://www.omdbapi.com/?s="+titulobuscado+"&page="+page, function(data){
                $.ajaxSetup({ cache: false });
                if (data.Search){
                   $.each(data.Search, function(i, field){
